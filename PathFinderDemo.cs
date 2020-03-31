@@ -104,12 +104,13 @@ namespace PathFinderApp
             BtnPause.Enabled = false;
         }
 
-        private delegate void UpdateTimeLabelDelegate(double time);
+        //private delegate void UpdateTimeLabelDelegate(double time);
         private void UpdateTimeLabel(double time)
         {
             if (this.InvokeRequired)
             {
-                Invoke(new UpdateTimeLabelDelegate(UpdateTimeLabel), new object[] { time });
+                //Invoke(new UpdateTimeLabelDelegate(UpdateTimeLabel), new object[] { time });
+                Invoke(new Action(() => { UpdateTimeLabel(time); }));
                 return;
             }
 

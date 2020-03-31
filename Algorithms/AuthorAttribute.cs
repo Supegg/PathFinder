@@ -1,4 +1,4 @@
-//
+﻿//
 //  THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
 //  KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
 //  IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR
@@ -11,14 +11,17 @@
 //
 using System;
 
-namespace Algorithms 
+namespace Algorithms
 {
-	internal class AuthorAttribute : Attribute
-	{
-		#region Constructors
-		public AuthorAttribute(string authorName)
-		{
-		}
-		#endregion
-	}
+    internal class AuthorAttribute : Attribute
+    {
+        #region Constructors
+        public string Author { get; }
+
+        public AuthorAttribute(string authorName)
+        {
+            Author = authorName;
+        }
+        #endregion
+    }
 }
