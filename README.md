@@ -4,7 +4,7 @@
 
 ## About the Author
 
-**Gustavo Franco** started with programming about 19 years ago as a teenager, from my old Commodore moving to PC/Server environment Windows/UNIX SQLServer/Oracle doing gwBasic, QBasic, Turbo Pascal, Assembler, Turbo C, BC, Clipper, Fox, SQL, C/C++, Pro*C, VB3/5/6, Java, and today loving C#. Currently working on VOIP/SIP technology. Passion for most programming languages and my son Aidan.
+***Gustavo Franco*** started with programming about 19 years ago as a teenager, from my old Commodore moving to PC/Server environment Windows/UNIX SQLServer/Oracle doing gwBasic, QBasic, Turbo Pascal, Assembler, Turbo C, BC, Clipper, Fox, SQL, C/C++, Pro*C, VB3/5/6, Java, and today loving C#. Currently working on VOIP/SIP technology. Passion for most programming languages and my son Aidan.
 
 ## About the Application
 

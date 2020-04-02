@@ -1,5 +1,4 @@
-using Algorithms;
-namespace PathFinderApp
+﻿namespace PathFinderApp
 {
     partial class PathFinderDemo
     {
@@ -92,6 +91,7 @@ namespace PathFinderApp
             // ToolStrp
             // 
             this.ToolStrp.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ToolStrp.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.ToolStrp.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.BtnNew,
             this.BtnLoad,
@@ -119,9 +119,9 @@ namespace PathFinderApp
             this.toolStripSeparator8,
             this.BtnEnd,
             this.toolStripSeparator9});
-            this.ToolStrp.Location = new System.Drawing.Point(0, 441);
+            this.ToolStrp.Location = new System.Drawing.Point(0, 726);
             this.ToolStrp.Name = "ToolStrp";
-            this.ToolStrp.Size = new System.Drawing.Size(643, 25);
+            this.ToolStrp.Size = new System.Drawing.Size(1182, 27);
             this.ToolStrp.TabIndex = 10;
             this.ToolStrp.Text = "toolStrip1";
             // 
@@ -131,7 +131,7 @@ namespace PathFinderApp
             this.BtnNew.Image = ((System.Drawing.Image)(resources.GetObject("BtnNew.Image")));
             this.BtnNew.ImageTransparentColor = System.Drawing.Color.Black;
             this.BtnNew.Name = "BtnNew";
-            this.BtnNew.Size = new System.Drawing.Size(23, 22);
+            this.BtnNew.Size = new System.Drawing.Size(29, 24);
             this.BtnNew.ToolTipText = "New";
             this.BtnNew.Click += new System.EventHandler(this.BtnNew_Click);
             // 
@@ -141,7 +141,7 @@ namespace PathFinderApp
             this.BtnLoad.Image = ((System.Drawing.Image)(resources.GetObject("BtnLoad.Image")));
             this.BtnLoad.ImageTransparentColor = System.Drawing.Color.Black;
             this.BtnLoad.Name = "BtnLoad";
-            this.BtnLoad.Size = new System.Drawing.Size(23, 22);
+            this.BtnLoad.Size = new System.Drawing.Size(29, 24);
             this.BtnLoad.ToolTipText = "Load";
             this.BtnLoad.Click += new System.EventHandler(this.BtnLoad_Click);
             // 
@@ -151,14 +151,14 @@ namespace PathFinderApp
             this.BtnSave.Image = ((System.Drawing.Image)(resources.GetObject("BtnSave.Image")));
             this.BtnSave.ImageTransparentColor = System.Drawing.Color.Black;
             this.BtnSave.Name = "BtnSave";
-            this.BtnSave.Size = new System.Drawing.Size(23, 22);
+            this.BtnSave.Size = new System.Drawing.Size(29, 24);
             this.BtnSave.ToolTipText = "Save";
             this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 27);
             // 
             // Btn1
             // 
@@ -166,7 +166,7 @@ namespace PathFinderApp
             this.Btn1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Btn1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Btn1.Name = "Btn1";
-            this.Btn1.Size = new System.Drawing.Size(23, 22);
+            this.Btn1.Size = new System.Drawing.Size(29, 24);
             this.Btn1.Tag = "1";
             this.Btn1.Text = "1";
             this.Btn1.Click += new System.EventHandler(this.Btn_Click);
@@ -174,7 +174,7 @@ namespace PathFinderApp
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // Btn2
             // 
@@ -182,7 +182,7 @@ namespace PathFinderApp
             this.Btn2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Btn2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Btn2.Name = "Btn2";
-            this.Btn2.Size = new System.Drawing.Size(23, 22);
+            this.Btn2.Size = new System.Drawing.Size(29, 24);
             this.Btn2.Tag = "2";
             this.Btn2.Text = "2";
             this.Btn2.Click += new System.EventHandler(this.Btn_Click);
@@ -190,7 +190,7 @@ namespace PathFinderApp
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // Btn5
             // 
@@ -198,7 +198,7 @@ namespace PathFinderApp
             this.Btn5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Btn5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Btn5.Name = "Btn5";
-            this.Btn5.Size = new System.Drawing.Size(23, 22);
+            this.Btn5.Size = new System.Drawing.Size(29, 24);
             this.Btn5.Tag = "5";
             this.Btn5.Text = "5";
             this.Btn5.Click += new System.EventHandler(this.Btn_Click);
@@ -206,7 +206,7 @@ namespace PathFinderApp
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
             // 
             // Btn10
             // 
@@ -214,7 +214,7 @@ namespace PathFinderApp
             this.Btn10.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Btn10.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Btn10.Name = "Btn10";
-            this.Btn10.Size = new System.Drawing.Size(23, 22);
+            this.Btn10.Size = new System.Drawing.Size(31, 24);
             this.Btn10.Tag = "10";
             this.Btn10.Text = "10";
             this.Btn10.Click += new System.EventHandler(this.Btn_Click);
@@ -222,7 +222,7 @@ namespace PathFinderApp
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator11.Size = new System.Drawing.Size(6, 27);
             // 
             // Btn13
             // 
@@ -230,7 +230,7 @@ namespace PathFinderApp
             this.Btn13.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Btn13.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Btn13.Name = "Btn13";
-            this.Btn13.Size = new System.Drawing.Size(23, 22);
+            this.Btn13.Size = new System.Drawing.Size(31, 24);
             this.Btn13.Tag = "13";
             this.Btn13.Text = "13";
             this.Btn13.Click += new System.EventHandler(this.Btn_Click);
@@ -238,7 +238,7 @@ namespace PathFinderApp
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 27);
             // 
             // Btn20
             // 
@@ -246,7 +246,7 @@ namespace PathFinderApp
             this.Btn20.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Btn20.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Btn20.Name = "Btn20";
-            this.Btn20.Size = new System.Drawing.Size(23, 22);
+            this.Btn20.Size = new System.Drawing.Size(31, 24);
             this.Btn20.Tag = "20";
             this.Btn20.Text = "20";
             this.Btn20.Click += new System.EventHandler(this.Btn_Click);
@@ -254,7 +254,7 @@ namespace PathFinderApp
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 27);
             // 
             // Btn40
             // 
@@ -262,7 +262,7 @@ namespace PathFinderApp
             this.Btn40.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Btn40.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Btn40.Name = "Btn40";
-            this.Btn40.Size = new System.Drawing.Size(23, 22);
+            this.Btn40.Size = new System.Drawing.Size(31, 24);
             this.Btn40.Tag = "40";
             this.Btn40.Text = "40";
             this.Btn40.Click += new System.EventHandler(this.Btn_Click);
@@ -270,7 +270,7 @@ namespace PathFinderApp
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 27);
             // 
             // Btn80
             // 
@@ -278,7 +278,7 @@ namespace PathFinderApp
             this.Btn80.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Btn80.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Btn80.Name = "Btn80";
-            this.Btn80.Size = new System.Drawing.Size(23, 22);
+            this.Btn80.Size = new System.Drawing.Size(31, 24);
             this.Btn80.Tag = "80";
             this.Btn80.Text = "80";
             this.Btn80.Click += new System.EventHandler(this.Btn_Click);
@@ -286,7 +286,7 @@ namespace PathFinderApp
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 27);
             // 
             // BtnX
             // 
@@ -294,7 +294,7 @@ namespace PathFinderApp
             this.BtnX.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.BtnX.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnX.Name = "BtnX";
-            this.BtnX.Size = new System.Drawing.Size(23, 22);
+            this.BtnX.Size = new System.Drawing.Size(29, 24);
             this.BtnX.Tag = "0";
             this.BtnX.Text = "X";
             this.BtnX.Click += new System.EventHandler(this.Btn_Click);
@@ -302,7 +302,7 @@ namespace PathFinderApp
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 27);
             // 
             // BtnStart
             // 
@@ -310,7 +310,7 @@ namespace PathFinderApp
             this.BtnStart.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.BtnStart.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnStart.Name = "BtnStart";
-            this.BtnStart.Size = new System.Drawing.Size(35, 22);
+            this.BtnStart.Size = new System.Drawing.Size(48, 24);
             this.BtnStart.Tag = "Start";
             this.BtnStart.Text = "Start";
             this.BtnStart.Click += new System.EventHandler(this.Btn_Click);
@@ -318,7 +318,7 @@ namespace PathFinderApp
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 27);
             // 
             // BtnEnd
             // 
@@ -326,7 +326,7 @@ namespace PathFinderApp
             this.BtnEnd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.BtnEnd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnEnd.Name = "BtnEnd";
-            this.BtnEnd.Size = new System.Drawing.Size(29, 22);
+            this.BtnEnd.Size = new System.Drawing.Size(40, 24);
             this.BtnEnd.Tag = "End";
             this.BtnEnd.Text = "End";
             this.BtnEnd.Click += new System.EventHandler(this.Btn_Click);
@@ -334,7 +334,7 @@ namespace PathFinderApp
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 27);
             // 
             // SaveDLG
             // 
@@ -353,10 +353,11 @@ namespace PathFinderApp
             this.TBarSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.TBarSpeed.AutoSize = false;
             this.TBarSpeed.LargeChange = 10;
-            this.TBarSpeed.Location = new System.Drawing.Point(493, 24);
+            this.TBarSpeed.Location = new System.Drawing.Point(982, 28);
+            this.TBarSpeed.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TBarSpeed.Maximum = 60;
             this.TBarSpeed.Name = "TBarSpeed";
-            this.TBarSpeed.Size = new System.Drawing.Size(121, 33);
+            this.TBarSpeed.Size = new System.Drawing.Size(161, 38);
             this.TBarSpeed.TabIndex = 11;
             this.TBarSpeed.TickFrequency = 10;
             this.TBarSpeed.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
@@ -369,9 +370,10 @@ namespace PathFinderApp
             this.LblSpeed.AutoSize = true;
             this.LblSpeed.BackColor = System.Drawing.Color.Transparent;
             this.LblSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LblSpeed.Location = new System.Drawing.Point(495, 9);
+            this.LblSpeed.Location = new System.Drawing.Point(985, 10);
+            this.LblSpeed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblSpeed.Name = "LblSpeed";
-            this.LblSpeed.Size = new System.Drawing.Size(38, 13);
+            this.LblSpeed.Size = new System.Drawing.Size(49, 17);
             this.LblSpeed.TabIndex = 12;
             this.LblSpeed.Text = "Speed";
             this.LblSpeed.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -382,9 +384,10 @@ namespace PathFinderApp
             this.ChkDiagonals.Checked = true;
             this.ChkDiagonals.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ChkDiagonals.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.ChkDiagonals.Location = new System.Drawing.Point(12, 4);
+            this.ChkDiagonals.Location = new System.Drawing.Point(16, 5);
+            this.ChkDiagonals.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ChkDiagonals.Name = "ChkDiagonals";
-            this.ChkDiagonals.Size = new System.Drawing.Size(73, 17);
+            this.ChkDiagonals.Size = new System.Drawing.Size(93, 21);
             this.ChkDiagonals.TabIndex = 13;
             this.ChkDiagonals.Text = "Diagonals";
             this.ChkDiagonals.UseVisualStyleBackColor = true;
@@ -392,18 +395,20 @@ namespace PathFinderApp
             // ChkPunishChangeDirection
             // 
             this.ChkPunishChangeDirection.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.ChkPunishChangeDirection.Location = new System.Drawing.Point(12, 47);
+            this.ChkPunishChangeDirection.Location = new System.Drawing.Point(16, 54);
+            this.ChkPunishChangeDirection.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ChkPunishChangeDirection.Name = "ChkPunishChangeDirection";
-            this.ChkPunishChangeDirection.Size = new System.Drawing.Size(140, 30);
+            this.ChkPunishChangeDirection.Size = new System.Drawing.Size(187, 35);
             this.ChkPunishChangeDirection.TabIndex = 14;
             this.ChkPunishChangeDirection.Text = "Punish Change Direction";
             this.ChkPunishChangeDirection.UseVisualStyleBackColor = true;
             // 
             // NumUpDownHeuristic
             // 
-            this.NumUpDownHeuristic.Location = new System.Drawing.Point(12, 93);
+            this.NumUpDownHeuristic.Location = new System.Drawing.Point(16, 107);
+            this.NumUpDownHeuristic.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.NumUpDownHeuristic.Name = "NumUpDownHeuristic";
-            this.NumUpDownHeuristic.Size = new System.Drawing.Size(38, 20);
+            this.NumUpDownHeuristic.Size = new System.Drawing.Size(51, 25);
             this.NumUpDownHeuristic.TabIndex = 15;
             this.NumUpDownHeuristic.Value = new decimal(new int[] {
             2,
@@ -416,9 +421,10 @@ namespace PathFinderApp
             this.LblHeuristic.AutoSize = true;
             this.LblHeuristic.BackColor = System.Drawing.Color.Transparent;
             this.LblHeuristic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LblHeuristic.Location = new System.Drawing.Point(9, 80);
+            this.LblHeuristic.Location = new System.Drawing.Point(12, 92);
+            this.LblHeuristic.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblHeuristic.Name = "LblHeuristic";
-            this.LblHeuristic.Size = new System.Drawing.Size(48, 13);
+            this.LblHeuristic.Size = new System.Drawing.Size(63, 17);
             this.LblHeuristic.TabIndex = 16;
             this.LblHeuristic.Text = "Heuristic";
             this.LblHeuristic.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -427,9 +433,10 @@ namespace PathFinderApp
             // 
             this.BtnPause.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnPause.Enabled = false;
-            this.BtnPause.Location = new System.Drawing.Point(492, 415);
+            this.BtnPause.Location = new System.Drawing.Point(981, 694);
+            this.BtnPause.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnPause.Name = "BtnPause";
-            this.BtnPause.Size = new System.Drawing.Size(143, 23);
+            this.BtnPause.Size = new System.Drawing.Size(191, 27);
             this.BtnPause.TabIndex = 17;
             this.BtnPause.Text = "Pause";
             this.BtnPause.UseVisualStyleBackColor = true;
@@ -446,9 +453,10 @@ namespace PathFinderApp
             "Euclidean",
             "Euclidean No SQR",
             "Custom"});
-            this.CboFormula.Location = new System.Drawing.Point(12, 129);
+            this.CboFormula.Location = new System.Drawing.Point(16, 149);
+            this.CboFormula.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.CboFormula.Name = "CboFormula";
-            this.CboFormula.Size = new System.Drawing.Size(137, 21);
+            this.CboFormula.Size = new System.Drawing.Size(181, 23);
             this.CboFormula.TabIndex = 18;
             this.CboFormula.SelectedIndexChanged += new System.EventHandler(this.CboFormula_SelectedIndexChanged);
             // 
@@ -457,9 +465,10 @@ namespace PathFinderApp
             this.LblFormula.AutoSize = true;
             this.LblFormula.BackColor = System.Drawing.Color.Transparent;
             this.LblFormula.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LblFormula.Location = new System.Drawing.Point(9, 116);
+            this.LblFormula.Location = new System.Drawing.Point(12, 134);
+            this.LblFormula.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblFormula.Name = "LblFormula";
-            this.LblFormula.Size = new System.Drawing.Size(44, 13);
+            this.LblFormula.Size = new System.Drawing.Size(59, 17);
             this.LblFormula.TabIndex = 19;
             this.LblFormula.Text = "Formula";
             this.LblFormula.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -468,9 +477,10 @@ namespace PathFinderApp
             // 
             this.ChkTieBraker.AutoSize = true;
             this.ChkTieBraker.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChkTieBraker.Location = new System.Drawing.Point(12, 156);
+            this.ChkTieBraker.Location = new System.Drawing.Point(16, 180);
+            this.ChkTieBraker.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ChkTieBraker.Name = "ChkTieBraker";
-            this.ChkTieBraker.Size = new System.Drawing.Size(103, 17);
+            this.ChkTieBraker.Size = new System.Drawing.Size(133, 21);
             this.ChkTieBraker.TabIndex = 20;
             this.ChkTieBraker.Text = "Use Tie Breaker";
             this.ChkTieBraker.UseVisualStyleBackColor = true;
@@ -478,9 +488,10 @@ namespace PathFinderApp
             // BtnStartStop
             // 
             this.BtnStartStop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnStartStop.Location = new System.Drawing.Point(492, 386);
+            this.BtnStartStop.Location = new System.Drawing.Point(981, 660);
+            this.BtnStartStop.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BtnStartStop.Name = "BtnStartStop";
-            this.BtnStartStop.Size = new System.Drawing.Size(143, 23);
+            this.BtnStartStop.Size = new System.Drawing.Size(191, 27);
             this.BtnStartStop.TabIndex = 22;
             this.BtnStartStop.Text = "Run";
             this.BtnStartStop.UseVisualStyleBackColor = true;
@@ -503,9 +514,10 @@ namespace PathFinderApp
             this.PnlSettings.Controls.Add(this.NumUpDownHeuristic);
             this.PnlSettings.Controls.Add(this.CboFormula);
             this.PnlSettings.Controls.Add(this.LblHeuristic);
-            this.PnlSettings.Location = new System.Drawing.Point(488, 59);
+            this.PnlSettings.Location = new System.Drawing.Point(976, 68);
+            this.PnlSettings.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PnlSettings.Name = "PnlSettings";
-            this.PnlSettings.Size = new System.Drawing.Size(155, 309);
+            this.PnlSettings.Size = new System.Drawing.Size(207, 357);
             this.PnlSettings.TabIndex = 23;
             // 
             // ChkUseFastPathFinder
@@ -513,9 +525,10 @@ namespace PathFinderApp
             this.ChkUseFastPathFinder.Checked = true;
             this.ChkUseFastPathFinder.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ChkUseFastPathFinder.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.ChkUseFastPathFinder.Location = new System.Drawing.Point(12, 267);
+            this.ChkUseFastPathFinder.Location = new System.Drawing.Point(16, 308);
+            this.ChkUseFastPathFinder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ChkUseFastPathFinder.Name = "ChkUseFastPathFinder";
-            this.ChkUseFastPathFinder.Size = new System.Drawing.Size(137, 20);
+            this.ChkUseFastPathFinder.Size = new System.Drawing.Size(183, 23);
             this.ChkUseFastPathFinder.TabIndex = 30;
             this.ChkUseFastPathFinder.Text = "Fast PathFinder";
             this.ChkUseFastPathFinder.UseVisualStyleBackColor = true;
@@ -526,9 +539,10 @@ namespace PathFinderApp
             this.ChlShowProgress.Checked = true;
             this.ChlShowProgress.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ChlShowProgress.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.ChlShowProgress.Location = new System.Drawing.Point(12, 290);
+            this.ChlShowProgress.Location = new System.Drawing.Point(16, 335);
+            this.ChlShowProgress.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ChlShowProgress.Name = "ChlShowProgress";
-            this.ChlShowProgress.Size = new System.Drawing.Size(97, 17);
+            this.ChlShowProgress.Size = new System.Drawing.Size(125, 21);
             this.ChlShowProgress.TabIndex = 29;
             this.ChlShowProgress.Text = "Show Progress";
             this.ChlShowProgress.UseVisualStyleBackColor = true;
@@ -536,9 +550,10 @@ namespace PathFinderApp
             // ChkHeavyDiagonals
             // 
             this.ChkHeavyDiagonals.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.ChkHeavyDiagonals.Location = new System.Drawing.Point(12, 24);
+            this.ChkHeavyDiagonals.Location = new System.Drawing.Point(16, 28);
+            this.ChkHeavyDiagonals.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ChkHeavyDiagonals.Name = "ChkHeavyDiagonals";
-            this.ChkHeavyDiagonals.Size = new System.Drawing.Size(140, 20);
+            this.ChkHeavyDiagonals.Size = new System.Drawing.Size(187, 23);
             this.ChkHeavyDiagonals.TabIndex = 26;
             this.ChkHeavyDiagonals.Text = "Heavy Diagonals";
             this.ChkHeavyDiagonals.UseVisualStyleBackColor = true;
@@ -549,16 +564,18 @@ namespace PathFinderApp
             this.LblGridSize.AutoSize = true;
             this.LblGridSize.BackColor = System.Drawing.Color.Transparent;
             this.LblGridSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LblGridSize.Location = new System.Drawing.Point(9, 212);
+            this.LblGridSize.Location = new System.Drawing.Point(12, 245);
+            this.LblGridSize.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblGridSize.Name = "LblGridSize";
-            this.LblGridSize.Size = new System.Drawing.Size(49, 13);
+            this.LblGridSize.Size = new System.Drawing.Size(66, 17);
             this.LblGridSize.TabIndex = 25;
             this.LblGridSize.Text = "Grid Size";
             this.LblGridSize.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // NumSearchLimit
             // 
-            this.NumSearchLimit.Location = new System.Drawing.Point(12, 189);
+            this.NumSearchLimit.Location = new System.Drawing.Point(16, 218);
+            this.NumSearchLimit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.NumSearchLimit.Maximum = new decimal(new int[] {
             999999,
             0,
@@ -570,7 +587,7 @@ namespace PathFinderApp
             0,
             0});
             this.NumSearchLimit.Name = "NumSearchLimit";
-            this.NumSearchLimit.Size = new System.Drawing.Size(62, 20);
+            this.NumSearchLimit.Size = new System.Drawing.Size(83, 25);
             this.NumSearchLimit.TabIndex = 22;
             this.NumSearchLimit.Value = new decimal(new int[] {
             50000,
@@ -582,14 +599,15 @@ namespace PathFinderApp
             // 
             this.TBarGridSize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.TBarGridSize.AutoSize = false;
-            this.TBarGridSize.Location = new System.Drawing.Point(5, 228);
-            this.TBarGridSize.Maximum = 30;
-            this.TBarGridSize.Minimum = 5;
+            this.TBarGridSize.Location = new System.Drawing.Point(7, 263);
+            this.TBarGridSize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TBarGridSize.Maximum = 40;
+            this.TBarGridSize.Minimum = 20;
             this.TBarGridSize.Name = "TBarGridSize";
-            this.TBarGridSize.Size = new System.Drawing.Size(144, 33);
+            this.TBarGridSize.Size = new System.Drawing.Size(192, 38);
             this.TBarGridSize.TabIndex = 24;
             this.TBarGridSize.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.TBarGridSize.Value = 20;
+            this.TBarGridSize.Value = 30;
             this.TBarGridSize.Scroll += new System.EventHandler(this.TBarGridSize_Scroll);
             // 
             // LblSearchLimit
@@ -597,9 +615,10 @@ namespace PathFinderApp
             this.LblSearchLimit.AutoSize = true;
             this.LblSearchLimit.BackColor = System.Drawing.Color.Transparent;
             this.LblSearchLimit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LblSearchLimit.Location = new System.Drawing.Point(9, 176);
+            this.LblSearchLimit.Location = new System.Drawing.Point(12, 203);
+            this.LblSearchLimit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblSearchLimit.Name = "LblSearchLimit";
-            this.LblSearchLimit.Size = new System.Drawing.Size(65, 13);
+            this.LblSearchLimit.Size = new System.Drawing.Size(86, 17);
             this.LblSearchLimit.TabIndex = 21;
             this.LblSearchLimit.Text = "Search Limit";
             this.LblSearchLimit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -607,10 +626,10 @@ namespace PathFinderApp
             // LblCompletedTimeValue
             // 
             this.LblCompletedTimeValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblCompletedTimeValue.Location = new System.Drawing.Point(571, 371);
+            this.LblCompletedTimeValue.Location = new System.Drawing.Point(1086, 428);
             this.LblCompletedTimeValue.Margin = new System.Windows.Forms.Padding(0);
             this.LblCompletedTimeValue.Name = "LblCompletedTimeValue";
-            this.LblCompletedTimeValue.Size = new System.Drawing.Size(44, 13);
+            this.LblCompletedTimeValue.Size = new System.Drawing.Size(59, 15);
             this.LblCompletedTimeValue.TabIndex = 28;
             this.LblCompletedTimeValue.Text = "0.000,0";
             // 
@@ -618,35 +637,37 @@ namespace PathFinderApp
             // 
             this.LblCompletedTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LblCompletedTime.AutoSize = true;
-            this.LblCompletedTime.Location = new System.Drawing.Point(491, 371);
+            this.LblCompletedTime.Location = new System.Drawing.Point(980, 428);
+            this.LblCompletedTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblCompletedTime.Name = "LblCompletedTime";
-            this.LblCompletedTime.Size = new System.Drawing.Size(148, 13);
+            this.LblCompletedTime.Size = new System.Drawing.Size(271, 15);
             this.LblCompletedTime.TabIndex = 27;
             this.LblCompletedTime.Text = "Completed Time               sec.";
             // 
             // PnlGUI
             // 
             this.PnlGUI.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PnlGUI.BackColor = System.Drawing.Color.White;
             this.PnlGUI.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PnlGUI.DrawModeSetup = PathFinderApp.DrawModeSetup.None;
             this.PnlGUI.End = new System.Drawing.Point(0, 0);
             this.PnlGUI.Formula = Algorithms.HeuristicFormula.Manhattan;
-            this.PnlGUI.GridSize = 20;
+            this.PnlGUI.GridSize = 40;
             this.PnlGUI.Location = new System.Drawing.Point(-1, -1);
+            this.PnlGUI.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             this.PnlGUI.Name = "PnlGUI";
             this.PnlGUI.NodeWeight = ((byte)(1));
-            this.PnlGUI.Size = new System.Drawing.Size(483, 439);
+            this.PnlGUI.Size = new System.Drawing.Size(968, 721);
             this.PnlGUI.Start = new System.Drawing.Point(0, 0);
             this.PnlGUI.TabIndex = 21;
             // 
             // PathFinderDemo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(643, 466);
+            this.ClientSize = new System.Drawing.Size(1182, 753);
             this.Controls.Add(this.LblSpeed);
             this.Controls.Add(this.LblCompletedTimeValue);
             this.Controls.Add(this.LblCompletedTime);
@@ -657,9 +678,11 @@ namespace PathFinderApp
             this.Controls.Add(this.BtnPause);
             this.Controls.Add(this.PnlSettings);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(500, 500);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MinimumSize = new System.Drawing.Size(661, 570);
             this.Name = "PathFinderDemo";
             this.Text = "AStar Demo";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ToolStrp.ResumeLayout(false);
             this.ToolStrp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TBarSpeed)).EndInit();
@@ -728,4 +751,3 @@ namespace PathFinderApp
         private System.Windows.Forms.CheckBox ChkUseFastPathFinder;
     }
 }
-
