@@ -32,7 +32,7 @@ namespace PathFinderApp
     {
         #region Variables Declaration
         private byte mNodeWeight = 1;
-        private int mGridSize = 30;
+        private int mGridSize = 40;
         private byte[,] mMatrix = new byte[1024, 1024];
         private Point mStart = Point.Empty;
         private Point mEnd = Point.Empty;
@@ -141,7 +141,7 @@ namespace PathFinderApp
                     using (Brush brush = new SolidBrush(Color.FromArgb(255, 240, 240, 240)))
                         g.FillRectangle(brush, internalRec);
 
-                using (Pen pen = new Pen(c))
+                using (Pen pen = new Pen(c, 2))
                     g.DrawRectangle(pen, internalRec);
 
                 if (type == PathFinderNodeType.Open)
@@ -160,7 +160,7 @@ namespace PathFinderApp
                         g.DrawString(totalCost.ToString(), f, Brushes.Black, (RectangleF)internalRec);
                     internalRec.Y += internalRec.Height;
                     using (Font f = new System.Drawing.Font("Verdana", 0.29F * mGridSize, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))))
-                        g.DrawString(cost.ToString(), f, Brushes.Black, (RectangleF)internalRec);
+                        g.DrawString(cost.ToString(), f, Brushes.HotPink, (RectangleF)internalRec);
                 }
 
                 g.Dispose();

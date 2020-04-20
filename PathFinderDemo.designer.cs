@@ -119,9 +119,9 @@
             this.toolStripSeparator8,
             this.BtnEnd,
             this.toolStripSeparator9});
-            this.ToolStrp.Location = new System.Drawing.Point(0, 726);
+            this.ToolStrp.Location = new System.Drawing.Point(0, 722);
             this.ToolStrp.Name = "ToolStrp";
-            this.ToolStrp.Size = new System.Drawing.Size(1182, 27);
+            this.ToolStrp.Size = new System.Drawing.Size(1182, 31);
             this.ToolStrp.TabIndex = 10;
             this.ToolStrp.Text = "toolStrip1";
             // 
@@ -131,7 +131,7 @@
             this.BtnNew.Image = ((System.Drawing.Image)(resources.GetObject("BtnNew.Image")));
             this.BtnNew.ImageTransparentColor = System.Drawing.Color.Black;
             this.BtnNew.Name = "BtnNew";
-            this.BtnNew.Size = new System.Drawing.Size(29, 24);
+            this.BtnNew.Size = new System.Drawing.Size(29, 28);
             this.BtnNew.ToolTipText = "New";
             this.BtnNew.Click += new System.EventHandler(this.BtnNew_Click);
             // 
@@ -141,7 +141,7 @@
             this.BtnLoad.Image = ((System.Drawing.Image)(resources.GetObject("BtnLoad.Image")));
             this.BtnLoad.ImageTransparentColor = System.Drawing.Color.Black;
             this.BtnLoad.Name = "BtnLoad";
-            this.BtnLoad.Size = new System.Drawing.Size(29, 24);
+            this.BtnLoad.Size = new System.Drawing.Size(29, 28);
             this.BtnLoad.ToolTipText = "Load";
             this.BtnLoad.Click += new System.EventHandler(this.BtnLoad_Click);
             // 
@@ -151,14 +151,14 @@
             this.BtnSave.Image = ((System.Drawing.Image)(resources.GetObject("BtnSave.Image")));
             this.BtnSave.ImageTransparentColor = System.Drawing.Color.Black;
             this.BtnSave.Name = "BtnSave";
-            this.BtnSave.Size = new System.Drawing.Size(29, 24);
+            this.BtnSave.Size = new System.Drawing.Size(29, 28);
             this.BtnSave.ToolTipText = "Save";
             this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
-            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 31);
             // 
             // Btn1
             // 
@@ -166,7 +166,7 @@
             this.Btn1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Btn1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Btn1.Name = "Btn1";
-            this.Btn1.Size = new System.Drawing.Size(29, 24);
+            this.Btn1.Size = new System.Drawing.Size(29, 28);
             this.Btn1.Tag = "1";
             this.Btn1.Text = "1";
             this.Btn1.Click += new System.EventHandler(this.Btn_Click);
@@ -174,7 +174,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // Btn2
             // 
@@ -182,7 +182,7 @@
             this.Btn2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Btn2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Btn2.Name = "Btn2";
-            this.Btn2.Size = new System.Drawing.Size(29, 24);
+            this.Btn2.Size = new System.Drawing.Size(29, 28);
             this.Btn2.Tag = "2";
             this.Btn2.Text = "2";
             this.Btn2.Click += new System.EventHandler(this.Btn_Click);
@@ -190,7 +190,7 @@
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // Btn5
             // 
@@ -198,7 +198,7 @@
             this.Btn5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Btn5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Btn5.Name = "Btn5";
-            this.Btn5.Size = new System.Drawing.Size(29, 24);
+            this.Btn5.Size = new System.Drawing.Size(29, 28);
             this.Btn5.Tag = "5";
             this.Btn5.Text = "5";
             this.Btn5.Click += new System.EventHandler(this.Btn_Click);
@@ -206,7 +206,7 @@
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 31);
             // 
             // Btn10
             // 
@@ -214,7 +214,7 @@
             this.Btn10.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Btn10.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Btn10.Name = "Btn10";
-            this.Btn10.Size = new System.Drawing.Size(31, 24);
+            this.Btn10.Size = new System.Drawing.Size(31, 28);
             this.Btn10.Tag = "10";
             this.Btn10.Text = "10";
             this.Btn10.Click += new System.EventHandler(this.Btn_Click);
@@ -222,7 +222,7 @@
             // toolStripSeparator11
             // 
             this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator11.Size = new System.Drawing.Size(6, 31);
             // 
             // Btn13
             // 
@@ -230,7 +230,7 @@
             this.Btn13.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Btn13.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Btn13.Name = "Btn13";
-            this.Btn13.Size = new System.Drawing.Size(31, 24);
+            this.Btn13.Size = new System.Drawing.Size(31, 28);
             this.Btn13.Tag = "13";
             this.Btn13.Text = "13";
             this.Btn13.Click += new System.EventHandler(this.Btn_Click);
@@ -238,7 +238,7 @@
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 31);
             // 
             // Btn20
             // 
@@ -246,7 +246,7 @@
             this.Btn20.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Btn20.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Btn20.Name = "Btn20";
-            this.Btn20.Size = new System.Drawing.Size(31, 24);
+            this.Btn20.Size = new System.Drawing.Size(31, 28);
             this.Btn20.Tag = "20";
             this.Btn20.Text = "20";
             this.Btn20.Click += new System.EventHandler(this.Btn_Click);
@@ -254,7 +254,7 @@
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 31);
             // 
             // Btn40
             // 
@@ -262,7 +262,7 @@
             this.Btn40.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Btn40.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Btn40.Name = "Btn40";
-            this.Btn40.Size = new System.Drawing.Size(31, 24);
+            this.Btn40.Size = new System.Drawing.Size(31, 28);
             this.Btn40.Tag = "40";
             this.Btn40.Text = "40";
             this.Btn40.Click += new System.EventHandler(this.Btn_Click);
@@ -270,7 +270,7 @@
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 31);
             // 
             // Btn80
             // 
@@ -278,7 +278,7 @@
             this.Btn80.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.Btn80.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Btn80.Name = "Btn80";
-            this.Btn80.Size = new System.Drawing.Size(31, 24);
+            this.Btn80.Size = new System.Drawing.Size(31, 28);
             this.Btn80.Tag = "80";
             this.Btn80.Text = "80";
             this.Btn80.Click += new System.EventHandler(this.Btn_Click);
@@ -286,7 +286,7 @@
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 31);
             // 
             // BtnX
             // 
@@ -294,7 +294,7 @@
             this.BtnX.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.BtnX.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnX.Name = "BtnX";
-            this.BtnX.Size = new System.Drawing.Size(29, 24);
+            this.BtnX.Size = new System.Drawing.Size(29, 28);
             this.BtnX.Tag = "0";
             this.BtnX.Text = "X";
             this.BtnX.Click += new System.EventHandler(this.Btn_Click);
@@ -302,7 +302,7 @@
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 31);
             // 
             // BtnStart
             // 
@@ -310,7 +310,7 @@
             this.BtnStart.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.BtnStart.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnStart.Name = "BtnStart";
-            this.BtnStart.Size = new System.Drawing.Size(48, 24);
+            this.BtnStart.Size = new System.Drawing.Size(48, 28);
             this.BtnStart.Tag = "Start";
             this.BtnStart.Text = "Start";
             this.BtnStart.Click += new System.EventHandler(this.Btn_Click);
@@ -318,7 +318,7 @@
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 31);
             // 
             // BtnEnd
             // 
@@ -326,7 +326,7 @@
             this.BtnEnd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.BtnEnd.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnEnd.Name = "BtnEnd";
-            this.BtnEnd.Size = new System.Drawing.Size(40, 24);
+            this.BtnEnd.Size = new System.Drawing.Size(40, 28);
             this.BtnEnd.Tag = "End";
             this.BtnEnd.Text = "End";
             this.BtnEnd.Click += new System.EventHandler(this.Btn_Click);
@@ -334,7 +334,7 @@
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 31);
             // 
             // SaveDLG
             // 
@@ -601,13 +601,13 @@
             this.TBarGridSize.AutoSize = false;
             this.TBarGridSize.Location = new System.Drawing.Point(7, 263);
             this.TBarGridSize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.TBarGridSize.Maximum = 40;
+            this.TBarGridSize.Maximum = 60;
             this.TBarGridSize.Minimum = 20;
             this.TBarGridSize.Name = "TBarGridSize";
             this.TBarGridSize.Size = new System.Drawing.Size(192, 38);
             this.TBarGridSize.TabIndex = 24;
             this.TBarGridSize.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            this.TBarGridSize.Value = 30;
+            this.TBarGridSize.Value = 40;
             this.TBarGridSize.Scroll += new System.EventHandler(this.TBarGridSize_Scroll);
             // 
             // LblSearchLimit
@@ -646,8 +646,8 @@
             // 
             // PnlGUI
             // 
-            this.PnlGUI.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.PnlGUI.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PnlGUI.BackColor = System.Drawing.Color.White;
             this.PnlGUI.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;

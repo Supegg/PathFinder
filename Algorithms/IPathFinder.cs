@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Algorithms;
+﻿using System.Collections.Generic;
 using System.Drawing;
 
 namespace Algorithms
@@ -25,7 +22,7 @@ namespace Algorithms
             set;
         }
 
-        bool Diagonals
+        bool Diagonals //对角线的
         {
             get;
             set;
@@ -37,25 +34,25 @@ namespace Algorithms
             set;
         }
 
-        int HeuristicEstimate
+        int HeuristicEstimate //启发系数
         {
             get;
             set;
         }
 
-        bool PunishChangeDirection
+        bool PunishChangeDirection //惩罚变换方向
         {
             get;
             set;
         }
 
-        bool TieBreaker
+        bool TieBreaker // 引入微小变量，解决比较时相等引入多分支的问题
         {
             get;
             set;
         }
 
-        int SearchLimit
+        int SearchLimit ///Closed节点数限制，即找不到路径
         {
             get;
             set;

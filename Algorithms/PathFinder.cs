@@ -220,23 +220,25 @@ namespace Algorithms
                     PathFinderDebug(0, 0, parentNode.X, parentNode.Y, PathFinderNodeType.Current, -1, -1);
 #endif
 
-                if (parentNode.X == end.X && parentNode.Y == end.Y)
+                if (parentNode.X == end.X && parentNode.Y == end.Y) //找到end
                 {
                     mClose.Add(parentNode);
                     found = true;
                     break;
                 }
 
-                if (mClose.Count > mSearchLimit)
+                if (mClose.Count > mSearchLimit) // 超出计算限制
                 {
                     mStopped = true;
+                    mCompletedTime = HighResolutionTime.GetTime();
                     return null;
                 }
 
-                if (mPunishChangeDirection)
+                if (mPunishChangeDirection) // 改变方向是否惩罚
                     mHoriz = (parentNode.X - parentNode.PX);
 
                 //Lets calculate each successors
+                //搜索子节点
                 for (int i = 0; i < (mDiagonals ? 8 : 4); i++)
                 {
                     PathFinderNode newNode;
@@ -246,6 +248,7 @@ namespace Algorithms
                     if (newNode.X < 0 || newNode.Y < 0 || newNode.X >= gridX || newNode.Y >= gridY)
                         continue;
 
+                    #region G
                     int newG;
                     if (mHeavyDiagonals && i > 3)
                         newG = parentNode.G + (int)(mGrid[newNode.X, newNode.Y] * 2.41);
@@ -253,7 +256,7 @@ namespace Algorithms
                         newG = parentNode.G + mGrid[newNode.X, newNode.Y];
 
 
-                    if (newG == parentNode.G)
+                    if (newG == parentNode.G) // when weight == X = 0 
                     {
                         //Unbrekeable
                         continue;
@@ -261,12 +264,12 @@ namespace Algorithms
 
                     if (mPunishChangeDirection)
                     {
-                        if ((newNode.X - parentNode.X) != 0)
+                        if ((newNode.X - parentNode.X) != 0) // x 方向变化
                         {
                             if (mHoriz == 0)
                                 newG += 20;
                         }
-                        if ((newNode.Y - parentNode.Y) != 0)
+                        if ((newNode.Y - parentNode.Y) != 0) // y 方向变化
                         {
                             if (mHoriz != 0)
                                 newG += 20;
@@ -274,6 +277,10 @@ namespace Algorithms
                         }
                     }
 
+                    // 负权路径会反复来回，形成死循环
+                    // 因此 权重需大于0
+                    // 因此 newG 必然大于第一次加入open或close时的 G ，避免了回溯
+                    // 因此 每个节点只会被计算一次
                     int foundInOpenIndex = -1;
                     for (int j = 0; j < mOpen.Count; j++)
                     {
@@ -283,8 +290,8 @@ namespace Algorithms
                             break;
                         }
                     }
-                    if (foundInOpenIndex != -1 && mOpen[foundInOpenIndex].G <= newG)
-                        continue;
+                    if (foundInOpenIndex != -1 && mOpen[foundInOpenIndex].G <= newG) // 条件必然成立
+                        continue; // 如果 newNode 在 open 集合并且不小于G，则跳过 newNode 
 
                     int foundInCloseIndex = -1;
                     for (int j = 0; j < mClose.Count; j++)
@@ -295,13 +302,16 @@ namespace Algorithms
                             break;
                         }
                     }
-                    if (foundInCloseIndex != -1 && mClose[foundInCloseIndex].G <= newG)
-                        continue;
+                    if (foundInCloseIndex != -1 && mClose[foundInCloseIndex].G <= newG) // 条件必然成立
+                        continue; // 如果 newNode 在 close 集合并且不小于G，则跳过 newNode 
 
+                    // 更新 newNode 节点
                     newNode.PX = parentNode.X;
                     newNode.PY = parentNode.Y;
                     newNode.G = newG;
+                    #endregion
 
+                    #region H
                     switch (mFormula)
                     {
                         default:
@@ -338,6 +348,8 @@ namespace Algorithms
                         int cross = Math.Abs(dx1 * dy2 - dx2 * dy1);
                         newNode.H = (int)(newNode.H + cross * 0.001);
                     }
+                    #endregion
+
                     newNode.F = newNode.G + newNode.H;
 
 #if DEBUGON
@@ -352,10 +364,10 @@ namespace Algorithms
                     //    mOpen.RemoveAt(foundInOpenIndex);
 
                     //if (foundInOpenIndex == -1)
-                    mOpen.Push(newNode);
+                    mOpen.Push(newNode); // 添加 open 节点 
                 }
 
-                mClose.Add(parentNode);
+                mClose.Add(parentNode); // 已经搜索过的 open 节点加入 close 
 
 #if DEBUGON
                 if (mDebugProgress && PathFinderDebug != null)
@@ -366,6 +378,7 @@ namespace Algorithms
             mCompletedTime = HighResolutionTime.GetTime();
             if (found)
             {
+                // 倒推路径节点
                 PathFinderNode fNode = mClose[mClose.Count - 1];
                 for (int i = mClose.Count - 1; i >= 0; i--)
                 {
@@ -380,9 +393,11 @@ namespace Algorithms
                     else
                         mClose.RemoveAt(i);
                 }
+
                 mStopped = true;
                 return mClose;
             }
+
             mStopped = true;
             return null;
         }
@@ -393,11 +408,11 @@ namespace Algorithms
         internal class ComparePFNode : IComparer<PathFinderNode>
         {
             #region IComparer Members
-            public int Compare(PathFinderNode x, PathFinderNode y)
+            public int Compare(PathFinderNode n1, PathFinderNode n2)
             {
-                if (x.F > y.F)
+                if (n1.F > n2.F)
                     return 1;
-                else if (x.F < y.F)
+                else if (n1.F < n2.F)
                     return -1;
                 return 0;
             }
